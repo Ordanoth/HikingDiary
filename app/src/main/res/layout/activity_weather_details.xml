@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/tausta">
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Kohdepiste"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp"
+        android:text="4"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/descrWeather"
+        android:layout_alignEnd="@+id/windSpeed" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imgWeather"
+        android:src="@drawable/t01d"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/location"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempUnit"
+        style="@style/textSmall"
+        android:text="@string/common_celsius"
+        android:layout_toEndOf="@+id/temp"
+        android:layout_alignBottom="@+id/temp"
+        android:textSize="16dp"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descrWeather"
+        style="@style/textSmall"
+        android:text="Pilvinen"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/imgWeather"
+        android:layout_toEndOf="@+id/pressure" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloudCoverTitle"
+        style="@style/textSmall"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="@string/weather_cloud_cover"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/descrWeather"
+        android:layout_toEndOf="@+id/descrWeather" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloudCover"
+        style="@style/textSmall"
+        android:textSize="16dp"
+        android:text="67%"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/cloudCoverTitle"
+        android:layout_toEndOf="@+id/cloudCoverTitle" />
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempUnit"
+        android:layout_alignBaseline="@id/temp"
+        android:layout_toRightOf="@id/temp"
+        android:layout_alignStart="@id/imgWeather"
+        android:text="@string/common_celsius"/-->
+
+    <!-- Here the current weather data -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempFeelsLikeTitle"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgWeather"
+        android:text="@string/weather_feels_like"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempFeelsLike"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:layout_alignTop="@+id/tempFeelsLikeTitle"
+        android:layout_toEndOf="@+id/tempFeelsLikeTitle"/>
+
+    <!-- Temperature data -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempTitle"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_temp"
+        android:layout_below="@id/tempFeelsLikeTitle"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempMinTitle"
+        android:text="@string/_common_min"
+        android:layout_alignTop="@+id/tempTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/tempTitle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempMin"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/tempMinTitle"
+        android:layout_toEndOf="@+id/tempMinTitle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempMaxTitle"
+        android:layout_toRightOf="@id/tempMin"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/tempMinTitle"
+        android:layout_toEndOf="@+id/tempMinTitle"
+        android:text="@string/_common_max" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempMax"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/tempMaxTitle"
+        android:layout_toEndOf="@+id/tempMaxTitle" />
+
+    <!-- End temp Data -->
+
+    <!-- Wind data -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/windTitle"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_wind"
+        android:layout_below="@id/tempMinTitle"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/windSpeed"
+        android:text="5m/s"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/humidityTitle"
+        android:layout_toEndOf="@+id/windTitle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/windDeg"
+        android:text="180"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/humidity"
+        android:layout_toEndOf="@+id/windSpeed" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wind16Deg"
+        android:text="SW"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/windDeg"
+        android:layout_toEndOf="@+id/windDeg" />
+    <!-- End wind Data -->
+
+    <!-- Humidity -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humidityTitle"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_humidity"
+        android:layout_below="@+id/windTitle"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humidity"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:text="90%"
+        android:layout_below="@id/windTitle"
+        android:layout_toRightOf="@+id/humidityTitle"/>
+    <!-- End Humidity Data -->
+
+    <!-- Pressure data -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressureTitle"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_preasure"
+        android:layout_below="@+id/humidityTitle"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressure"
+        android:layout_marginLeft="20dp"
+        android:text="1009"
+        android:layout_above="@+id/visibilityTitle"
+        android:layout_toEndOf="@+id/pressureTitle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressureStat"
+        android:layout_toRightOf="@id/pressure"
+        android:layout_alignBaseline="@id/pressure"
+        android:layout_marginLeft="10dp"/>
+    <!-- End Pressure data -->
+
+    <!-- Visibility -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/visibilityTitle"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_visibility"
+        android:layout_below="@+id/pressureTitle"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/visibility"
+        android:layout_marginLeft="20dp"
+        android:text="10 km"
+        android:layout_alignTop="@+id/visibilityTitle"
+        android:layout_toEndOf="@+id/pressureTitle" />
+    <!-- End visibility -->
+
+    <!-- Astronomy -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunTitle"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/visibilityTitle"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunriseTitle"
+        android:text="@string/weather_sunrise"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/visibilityTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunrise"
+        android:layout_marginLeft="5dp"
+        android:text="7:00"
+        android:layout_alignTop="@+id/sunriseTitle"
+        android:layout_toEndOf="@+id/sunriseTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunsetTitle"
+        android:text="@string/weather_sunset"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/sunriseTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunset"
+        android:layout_marginLeft="5dp"
+        android:text="21:00"
+        android:layout_alignTop="@+id/sunsetTitle"
+        android:layout_toEndOf="@+id/sunsetTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moonriseTitle"
+        android:text="@string/weather_moonrise"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/sunsetTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moonrise"
+        android:layout_marginLeft="5dp"
+        android:text="7:00"
+        android:layout_alignTop="@+id/moonriseTitle"
+        android:layout_toEndOf="@+id/moonriseTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moonsetTitle"
+        android:text="@string/weather_moonset"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/moonriseTitle"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moonset"
+        android:layout_marginLeft="5dp"
+        android:text="21:00"
+        android:layout_alignTop="@+id/moonsetTitle"
+        android:layout_toEndOf="@+id/moonsetTitle" />
+
+    <!--  UV -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uvTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_uv_index"
+        android:layout_below="@+id/moonset"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uvIndex"
+        android:layout_marginLeft="5dp"
+        android:text="10"
+        android:layout_alignTop="@+id/uvTitle"
+        android:layout_toEndOf="@+id/uvTitle" />
+
+    <!--  Precio -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precipTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:text="@string/weather_precipitation"
+        android:layout_below="@+id/uvTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precip"
+        android:layout_marginLeft="5dp"
+        android:text="10"
+        android:layout_alignTop="@+id/precipTitle"
+        android:layout_toEndOf="@+id/precipTitle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precipMM"
+        android:layout_marginLeft="5dp"
+        android:text="@string/weather_mm"
+        android:layout_alignTop="@+id/precip"
+        android:layout_toEndOf="@+id/precip" />
+</RelativeLayout>

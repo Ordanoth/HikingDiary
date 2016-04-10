@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/world_weather_api_key_needed"
+        android:id="@+id/tv_world_weather_note_header"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_world_weather_key_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/world_weather_key_text"
+        android:autoLink="web"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_world_weather_note_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_world_weather_key"
+        android:hint="@string/world_weather_note_hint"
+        android:layout_below="@+id/tv_world_weather_key_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tausta">
+
+    <ImageView
+        android:id="@+id/image_point_details"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/valo"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txt_point_details_name"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/edit_txt_point_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textMultiLine"
+        android:text="@string/lorem_ipsum"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/routeFontSize"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image_point_details"
+        android:maxLines="11"
+        android:scrollbars="vertical"/>
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_show_map"
+        android:id="@+id/btn_get_location"
+        android:background="@drawable/buttonaddshape"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#A8A8A8"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit_txt_lon_text"
+        android:layout_marginTop="10dp"/>
+
+    <!--Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_edit"
+        android:id="@+id/btn_edit_point"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_txt_point_desc"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:layout_marginTop="5dp"/-->
+
+    <TextView
+        android:id="@+id/edit_txt_lat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/routeFontSize"
+        android:layout_marginLeft="10dp"
+        android:text="65.0000000"
+        android:layout_below="@+id/edit_txt_details_lat_header" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/routeFontSize"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edit_txt_lon_text"
+        android:text="27.0000000"
+        android:layout_below="@+id/txt_details_lon_header"/>
+
+    <TextView
+        android:id="@+id/edit_txt_details_lat_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/routeFontSize"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Latitude:"
+        android:layout_below="@+id/txt_point_details_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/routeFontSize"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Longitude:"
+        android:id="@+id/txt_details_lon_header"
+        android:layout_below="@+id/edit_txt_lat_text" />
+
+    <TextView
+        android:id="@+id/txt_point_details_name"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kohdepiste"
+        android:textSize="@dimen/routeTitleFontSize"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_point_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/routeTitleFontSize"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@+id/txt_point_details_name"
+        android:text="21.12.2015" />
+
+    <TextView
+        android:id="@+id/weatherTitle"
+        android:textStyle="bold"
+        android:text="@string/weather_Title"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_txt_point_desc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <!--TextView
+        android:id="@+id/stationText"
+        android:hint="@string/weather_location"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weatherTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/-->
+
+    <ImageView
+        android:id="@+id/condIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/weatherTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/condDescr"
+        android:hint="dessdfsdfsdfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/condIcon"
+        android:layout_alignStart="@+id/hum"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:hint="@string/common_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/condDescr"
+        android:layout_toRightOf="@id/condDescr"/>
+
+    <TextView
+        android:id="@+id/pressLab"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/condDescr"
+        android:text="@string/weather_preasure"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/press"
+        android:hint="press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/pressLab"
+        android:layout_toRightOf="@id/pressLab"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/humLab"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pressLab"
+        android:text="@string/weather_humidity"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/hum"
+        android:hint="hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/humLab"
+        android:layout_toRightOf="@id/humLab"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/windLab"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/humLab"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/weather_wind" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:hint="wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/windLab"
+        android:layout_toRightOf="@id/windLab"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/windDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/windLab"
+        android:layout_toRightOf="@id/windSpeed"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/txt_more_weather"
+        android:text="@string/more_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#0000FF"
+        android:layout_below="@+id/windLab"/>
+</RelativeLayout>

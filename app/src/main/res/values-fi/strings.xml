@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Hiking Diary</string>
+    <string name="routelist_activity">KOHTEET</string>
+    <string name="route_add">LISÄÄ KOHDE</string>
+    <string name="pointlist_activity">KOHDEPISTEET</string>
+    <string name="point_activity">KOHDEPISTE</string>
+    <string name="point_add">LISÄÄ KOHDEPISTE</string>
+    <string name="point_edit">MUOKKAA KOHDEPISTETTÄ</string>
+    <string name="settings_label">TYÖKALUT</string>
+
+    <string name="action_addnew">Lisää uusi</string>
+    <string name="action_info">Info</string>
+    <string name="action_edit">Muokkaa</string>
+    <string name="common_delete">Poista</string>
+    <string name="action_about">Tietoja</string>
+    <string name="common_tools">Työkalut</string>
+    <string name="change_date">Vaihda päivä</string>
+    <string name="add_route">Lisää kohde</string>
+    <string name="route_name">Kohteennimi</string>
+    <string name="route_date">Päivämäärä</string>
+    <string name="no_routes">Ei kohteita tietokannassa. Luo uusi kohde valitsemalla lisää-painike oikeasta yläreunasta.</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna est, varius tristique posuere in, dapibus sit amet nibh. Nam ac purus a nulla imperdiet lobortis at id elit. Sed et sapien nunc. Pellentesque sodales, tortor id convallis convall </string>
+    <string name="common_save">Tallenna</string>
+    <string name="location_url">Linkki\nKartalle</string>
+    <string name="get_coordinates">Hae\nkoordinaatit</string>
+    <string name="route_deleted_successfully">Kohde poistettu onnistuneesti!</string>
+    <string name="route_created_successfully">Kohde lisätty onnistuneesti!</string>
+    <string name="point_created_successfully">Kiintopiste lisätty onnistuneesti</string>
+    <string name="point_deleted_successfully">Kiintopiste poistettu onnistuneesti</string>
+    <string name="empty_fields_message">Tyhjät kentät eivät ole sallittuja!</string>
+    <string name="empty_fields_coord">Koordinaattikentät eivät voi olla tyhjät!</string>
+    <string name="common_edit">Muokkaa</string>
+    <string name="no_point_added">Kohdepisteitä ei ole lisätty</string>
+    <string name="export_db">Varmuuskopio DB</string>
+    <string name="import_db">Palauta DB</string>
+    <string name="point_image_title">KOHTEPISTEEN KUVA</string>
+    <string name="app_descrip">Teksti 1</string>
+    <string name="app_credits">Toinen teksti! www.redneck-wanderers.com</string>
+
+    //Weather
+    <string name="weather_preasure">Ilmanpaine</string>
+    <string name="weather_temp">Lämpötila</string>
+    <string name="weather_wind">Tuuli</string>
+    <string name="weather_windir">Tuulen suunta</string>
+    <string name="weather_humidity">Kosteus</string>
+    <string name="weather_location">Paikkakunta</string>
+    <string name="weather_Title">Säätiedot</string>
+    <string name="common_percent">%</string>
+    <string name="common_celsius">°C</string>
+    <string name="common_deg">°</string>
+    <string name="common_hpa">hPa</string>
+    <string name="common_speed">m/s</string>
+    <string name="get_weather_data">Hae säätiedot</string>
+    <string name="more_weather"><u>Lisätietoa säästä</u></string>
+    <string name="_common_min">min</string>
+    <string name="_common_max">max</string>
+    <string name="weather_winspeed">Tuulen nopeus</string>
+    <string name="change_photo">Vaihda kuva?</string>
+    <string name="choose_from_gallery">Valitse galleriasta</string>
+    <string name="common_cancel">Peruuta</string>
+    <string name="common_settings">Asetukset</string>
+    <string name="could_get_weather">Säätietoja ei saatu ladattua!</string>
+    <string name="creating_tables">Luodaan taulut tietokantaan</string>
+    <string name="delete_point_confirm">Haluatko varmasti poistaan kohdepisteen</string>
+    <string name="gps_enable">GPS ei ole aktivoitu. Haluatko aktivoida?</string>
+    <string name="gps_settings">GPS asetukset</string>
+    <string name="select_photo">Valitse kuva</string>
+    <string name="take_photo">Ota kuva</string>
+    <string name="no_points">Ei kohdepisteitä kohteella. Luo uusi kohdepiste valitsemalla lisää-painike oikeasta yläreunasta.</string>
+    <string name="world_weather_key_text">World Weather Online API ei löytynyt! \nHanki oma API key täältä: www.worldweatheronline.com \nja kopioi liitä se tekstikenttään!</string>
+    <string name="world_weather_note_hint">Kopioi/liitä tähän World Weather API key</string>
+    <string name="world_weather_api_key_needed">World Weather Online API key</string>
+    <string name="common_change">Vaihda</string>
+    <string name="lang_spinner_title">Kieli:</string>
+    <string name="select_lang">Valitse kieli</string>
+    <string name="settings_title">ASETUKSET</string>
+    <string name="weather_information_title">Säätiedot</string>
+    <string name="weather_information_header">SÄÄTIEDOT</string>
+    <string-array name="lang_array">
+        <item>Suomi</item>
+        <item>English</item>
+    </string-array>
+    <string name="add_route_hint">Anna kohteennimi</string>
+    <string name="weather_cloud_cover">Pilvipeitto</string>
+    <string name="weather_feels_like">Tuntuu</string>
+    <string name="weather_moon">Kuu</string>
+    <string name="weather_moonrise">Kuu nousee</string>
+    <string name="weather_moonset">Kuu laskee</string>
+    <string name="weather_precipitation">Sademäärä</string>
+    <string name="weather_sun">Aurinko</string>
+    <string name="weather_sunrise">Aurinko nousee</string>
+    <string name="weather_sunset">Aurinko laskee</string>
+    <string name="weather_uv_index">UV-indeksi</string>
+    <string name="weather_visibility">Näkyvyys</string>
+</resources>

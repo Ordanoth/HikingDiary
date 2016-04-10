@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tausta">
+
+    <Button
+        android:id="@+id/btn_export_db"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/export_db"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonaddshape"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#A8A8A8"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"/>
+
+    <Button
+        android:id="@+id/btn_import_db"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/import_db"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonaddshape"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#A8A8A8"
+        android:layout_alignTop="@+id/btn_export_db"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/langTitle"
+        android:text="@string/lang_spinner_title"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/btn_import_db"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/langSpinner"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/lang_array"
+        android:layout_below="@+id/langTitle"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_change_language"
+        android:background="@drawable/buttonaddshape"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#A8A8A8"
+        android:text="@string/common_change"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@+id/langSpinner"
+        android:layout_alignEnd="@+id/btn_import_db" />
+
+
+</RelativeLayout>

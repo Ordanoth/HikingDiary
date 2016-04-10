@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Hiking Diary</string>
+    <string name="routelist_activity">ROUTES</string>
+    <string name="route_add">ADD ROUTE</string>
+    <string name="pointlist_activity">POINTS</string>
+    <string name="point_activity">POINT</string>
+    <string name="point_add">ADD POINT</string>
+    <string name="point_edit">EDIT POINT</string>
+    <string name="settings_label">TOOLS</string>
+
+    <string name="action_addnew">Add new</string>
+    <string name="action_info">Info</string>
+    <string name="action_edit">Edit</string>
+    <string name="common_delete">Delete</string>
+    <string name="action_about">About</string>
+    <string name="common_tools">Tools</string>
+    <string name="change_date">Change date</string>
+    <string name="add_route">Add route</string>
+    <string name="route_name">Route name</string>
+    <string name="route_date">Date</string>
+    <string name="no_routes">There are no routes in the database. Create a new route, click the Add button at the top right.</string>
+    <string name="no_points">There are no points in the database. Create a new point, click the Add button at the top right.</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna est, varius tristique posuere in, dapibus sit amet nibh. Nam ac purus a nulla imperdiet lobortis at id elit. Sed et sapien nunc. Pellentesque sodales, tortor id convallis convall </string>
+    <string name="common_save">Save</string>
+    <string name="location_url">Show map</string>
+    <string name="get_coordinates">Get coordinates</string>
+    <string name="route_deleted_successfully">Route deleted successfully!</string>
+    <string name="route_created_successfully">Route added successfully!</string>
+    <string name="point_created_successfully">Point added successfully</string>
+    <string name="point_deleted_successfully">Point deleted successfully</string>
+    <string name="empty_fields_message">Empty fields are not allowed!</string>
+    <string name="empty_fields_coord">Coordinate fields can not be empty!</string>
+    <string name="common_edit">Edit</string>
+    <string name="no_point_added">Points of Interest is not added</string>
+    <string name="export_db">Backup DB</string>
+    <string name="import_db">Restore DB</string>
+    <string name="point_image_title">POINT PICTURE</string>
+    <string name="app_descrip">Text one!</string>
+    <string name="app_credits">Another text! www.redneck-wanderers.com</string>
+
+    //Weather
+    <string name="weather_preasure">Pressure</string>
+    <string name="weather_temp">Temperature</string>
+    <string name="weather_wind">Wind</string>
+    <string name="weather_windir">Wind direction</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_location">Location</string>
+    <string name="weather_Title">Weather information</string>
+    <string name="common_percent">%</string>
+    <string name="common_celsius">°C</string>
+    <string name="common_deg">°</string>
+    <string name="common_hpa">hPa</string>
+    <string name="common_speed">m/s</string>
+    <string name="get_weather_data">Get weather</string>
+    <string name="more_weather"><u>Detailed weather</u></string>
+    <string name="_common_min">min</string>
+    <string name="_common_max">max</string>
+    <string name="weather_winspeed">Wind speed</string>
+    <string name="creating_tables">Creating database tables</string>
+    <string name="change_photo">Change Photo?</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_settings">Settings</string>
+    <string name="could_get_weather">Could not get weather information!</string>
+    <string name="delete_point_confirm">Are you sure you want to delete the Point</string>
+    <string name="gps_enable">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="gps_settings">GPS settings</string>
+    <string name="select_photo">Select photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="world_weather_key_text">World Weather Online API is missing! \nGet your own API key here: www.worldweatheronline.com  \nand copy paste it in the text field!</string>
+    <string name="world_weather_note_hint">Copy/Paste here World Weather API key</string>
+    <string name="world_weather_api_key_needed">World Weather Online API key</string>
+    <string name="common_change">Change</string>
+    <string name="lang_spinner_title">Language:</string>
+    <string name="select_lang">Select language</string>
+    <string name="settings_title">SETTINGS</string>
+    <string name="weather_information_title">Weather information</string>
+    <string name="weather_information_header">WEATHER INFORMATION</string>
+    <string-array name="lang_array">
+        <item>Suomi</item>
+        <item>English</item>
+    </string-array>
+    <string name="add_route_hint">Add route name</string>
+    <string name="weather_cloud_cover">Cloud cover</string>
+    <string name="weather_feels_like">Feels like</string>
+    <string name="weather_moon">Moon</string>
+    <string name="weather_moonrise">Moonrise</string>
+    <string name="weather_moonset">Moonset</string>
+    <string name="weather_precipitation">Precipitation</string>
+    <string name="weather_sun">Sun</string>
+    <string name="weather_sunrise">Sunrise</string>
+    <string name="weather_sunset">Sunset</string>
+    <string name="weather_uv_index">UV index</string>
+    <string name="weather_visibility">Visibility</string>
+</resources>

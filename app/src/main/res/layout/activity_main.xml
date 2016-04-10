@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/tausta"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lvTrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <!--Button
+        android:id="@+id/btn_add_route"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="36dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonaddshape"
+        android:shadowColor="#A8A8A8"
+        android:layout_alignParentTop="false" /-->
+
+    <TextView
+        android:id="@+id/txt_empty_list_routes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="@string/no_routes"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+</RelativeLayout>
